@@ -2,10 +2,6 @@
 ///Validation 
 const Joi = require('joi');
 
-
-
-
-
 //register validatino 
 const registerValidation = (data)=>{
     const schema = Joi.object().keys( {
@@ -27,7 +23,7 @@ const registerValidation = (data)=>{
     return Joi.validate(data,schema) ; 
     
     
-    }
+}
 
     
 
@@ -51,7 +47,7 @@ const loginValidation = (data)=>{
     return Joi.validate(data,schema) ; 
     
     
-    }
+}
     
 
 module.exports.registerValidation = registerValidation  ;
